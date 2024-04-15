@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Quiz Maker</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+<!-- Navigation -->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand ml-auto mr-auto" href="#home" id="homeLink">Home</a>
+  <a class="navbar-brand ml-auto mr-auto" href="#quizCreation" id="createQuizLink">Create Quiz</a>
+  <a class="navbar-brand ml-auto mr-auto" href="#quizTaking" id="takeQuizLink">Take Quiz</a>
+  <a class="navbar-brand ml-auto mr-auto" href="#quizResults" id="resultsLink">Results</a> <!-- Added Results link -->
+</nav>
+
+  <div class="container-fluid mt-5">
+    <!-- Home Page -->
+    <div id="home" class="text-center">
+      <h1>Welcome to Online Quiz Maker</h1>
+      <br><br>
+      <div class="home-options">
+        <button class="btn btn-primary" id="createQuizHome">Create Quiz</button>
+        <button class="btn btn-primary" id="takeQuizHome">Take Quiz</button>
+      </div>
+    </div>
+    <!-- Quiz Creation -->
+    <div id="quizCreation" class="text-center" style="display: none;">
+      <h2>Create a New Quiz</h2><br><br>
+      
+      <form id="quizForm">
+        <div class="form-group">
+          <h3><label for="quizTitle">Quiz Title:</label></h3>
+          <input type="text" class="form-control" id="quizTitle" required>
+        </div>
+        <div id="questionContainer"></div>
+        <button type="button" class="btn btn-primary mb-3" id="addQuestion">Add Question</button><br><br>
+        <button type="submit" class="btn btn-success">Save Quiz</button>
+        <button class="btn btn-secondary mb-3" id="backToHome">Back</button>
+      </form>
+    </div>
+    <!-- Quiz Taking -->
+    <div id="quizTaking" class="text-center" style="display: none;">
+      <h2 id="quizTitle" class="mb-4"></h2>
+      <div id="questionDisplay"></div>
+      <button class="btn btn-primary mt-3" id="submitQuiz">Submit Quiz</button>
+    </div>
+    
+    <!-- Quiz Results -->
+    <div id="quizResults" class="text-center" style="display: none;">
+      <h2 class="text-center mb-4">Quiz Results</h2>
+      <p id="score" class="text-center"></p>
+      <div id="correctAnswers"></div>
+    </div>
+    <!-- Quiz Listing -->
+    <div id="quizListing" class="text-center" style="display: none;">
+      <h2>Available Quizzes</h2>
+      <button class="btn btn-secondary mb-3" id="backButton">Back</button>
+      <ul id="quizList"></ul>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
