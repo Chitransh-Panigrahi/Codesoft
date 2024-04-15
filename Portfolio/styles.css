@@ -1,0 +1,269 @@
+/* CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('white-concrete-wall.jpg'); /* Add background image */
+    background-size: cover; /* Ensure the background image covers the entire body */
+    max-width: fit-content;
+}
+
+#navbar {
+    background-color: #333; /* Change navbar background color to black */
+    color: white; /* Change text color to white */
+    padding: 10px 0;
+    text-align: center; /* Center links */
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #555;
+}
+
+#header_div {
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    height: 100vh; /* Set header_div height to full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0%;
+    padding-bottom:0%;
+}
+#head_hello{
+    font: size 45px;
+}
+#head_h1 {
+    font-size: 50px;
+    margin: 0; /* Remove default margin */
+}
+
+#head_p {
+    font-size: 30px;
+    margin: 0; /* Remove default margin */
+}
+
+#header_content {
+    display: flex;
+    /*justify-content: space-between;*/ /* Distribute items to the start and end */
+    align-items: center;
+   
+}
+
+#text_content {
+    text-align: left;
+    margin-left:10%;
+}
+
+#header_image {
+    height: 250px;
+    border-radius: 50%;
+    margin: 10%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+#social_media {
+    margin-top: 20px; 
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#social_media a {
+    margin-right: 10px; /* Add margin between social media icons */
+}
+
+#social_icon {
+    height: 30px;
+    margin: 10px;
+}
+
+#about {
+    color: #333; /* Text color */
+    padding: 20px;
+    text-align: center; /* Center text */
+    height: 100vh;
+   
+}
+#bar{
+    background-color: #333;
+    color:white;
+    padding: 5px;
+}
+#about{
+    height: 100vh;
+}
+#aboutdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  /* Add some top margin */
+    margin-bottom: 40%;
+}
+
+#image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 6%;
+    margin-right: 6%; /* Adjust spacing between image and text */
+}
+
+#about p {
+    flex: 1;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10%;
+    text-align: left;
+}
+
+#skills {
+    color: #333; /* Text color */
+    padding: 20px;
+    text-align: center; /* Center text */
+    height: 100vh;
+}
+
+#skills h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+#skills_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#skills_left,
+#skills_right {
+    flex: 1;
+}
+
+#skills_left ul,
+#skills_right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills_left ul li,
+#skills_right ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#icon {
+    margin-right: 10px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%
+}
+
+
+#projects{
+    color: #333; /* Text color */
+    padding: 20px;
+    text-align: center; /* Center text */
+    height: 120vh;
+}
+#project{
+    font-weight: bold;
+    
+    
+}
+#project_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 30px;
+    list-style-type: none;
+}
+#pro_h{
+    font-size: 35px;
+    font-weight: bold;
+}
+#p_para{
+    font-size: 25px;
+    padding: 10%;
+    text-align: left;
+}
+#img_pro{
+    height: 500px;
+    width: 500px;
+}
+#resume{
+    color: #333; /* Text color */
+    padding: 20px;
+    text-align: center; /* Center text */
+    height: 100vh;
+   
+}
+#resume_img{
+height: 500px;
+width: 500px;
+
+}
+#resume_flex{
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    list-style-type: none;
+}
+#re_p{
+    width: 100vh;
+    font-size: 25px;
+    padding: 20%;
+}
+
+#contact{
+    background-color: #333; /* Text color */
+    color:#fff;
+    padding: 20px;
+    text-align: center; /* Center text */
+    
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
